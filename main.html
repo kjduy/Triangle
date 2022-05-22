@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="EN" xml:lang="en">
+<head>
+  <title>Tipo de Triángulo</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" href="estilo.css">
+  <script src="validacion.js"></script>
+</head>
+
+<body>
+  <section class="form">
+    <h4>Tipo de Triángulo</h4>
+    <label for="lado_uno">Ingresar el valor del primer lado: </label>
+    <input class="controls" type="number" id="lado_uno" min="1" step="1" onChange="esVacio()"
+      onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+    <label for="lado_dos">Ingresar el valor del segundo lado: </label>
+    <input class="controls" type="number" id="lado_dos" min="1" step="1" onChange="esVacio()"
+      onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+    <label for="lado_tres">Ingresar el valor del tercer lado: </label>
+    <input class="controls" type="number" id="lado_tres" min="1" step="1" onChange="esVacio()"
+      onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+    <button class="botons" id="btnRespuesta" onclick="triangulo()" disabled="disabled">Obtener el tipo de
+      triángulo</button>
+    <p>Resultado</p>
+    <p id="txtRespuesta"></p>
+  </section>
+</body>
+
+</html>
